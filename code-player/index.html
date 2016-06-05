@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CodePlayer</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="_css/styles.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="_js/scripts.js" defer></script>
+</head>
+<body onload="reshapeCodeContainersHeight()" onresize="reshapeCodeContainersHeight()">
+    <div id="header">
+        <div id="logo">
+            <p>CodePlayer</p>
+        </div>
+
+        <nav id="menuNav">
+            <ul id="menuList">
+                <li class="toggleButton">html</li>
+                <li class="toggleButton">css</li>
+                <li class="toggleButton">javaScript</li>
+                <li class="toggleButton">output</li>
+            </ul>
+        </nav>
+
+        <div id="buttonDiv">
+            <button id="runButton">Run</button>
+        </div>
+    </div>
+    <div id="welcomeText">
+        <p>Hello ya'll! I'm Lucas Zanferrari, a web developer, science and technology student
+        (neeeeeerd... :P) and innovation enthusiastic.</p>
+
+        <p>This is my first individual project that goes online (yay)! It
+        is a pretty basic code player of HTML, CSS and plain old JavaScript (no
+        external resources support yet) which I coded in roughly one day only to
+        practice and show to potential employers as part of my folio, so please don't
+        over judge me on account of potential bugs and/or lack of features (although
+        ideas and feedback are more than welcome). :)</p>
+
+        <p>Also, I'm not a designer (though I'm interested in the field), so don't
+        expect astonishingly great looks from my system. But then again, ideas
+        and feedback are more than welcome hahaha.</p>
+
+        <p>You can start to use the system by navigating through the top menu bar,
+        and if you by chance wish to come back to this text at any point, just click
+        in that big "CodePlayer" text on your screen's upper-left side. The Run
+        button will display the result of your code in the OUTPUT frame, however it should
+        not be required in normal circumstances as the code result is displayed in real-time
+        (right as you type it).</p>
+
+        <p>For any suggestions, recommendations, criticism and anything you might have
+        to say about my work (or just chitchatting, I'm a welcoming person hahaha),
+        you can find me on <span>lucas.zanferrari@gmail.com</span> or on my
+        <a href="https://www.facebook.com/lucas.zanferraricaraca" target="_blank">Facebook profile.</a></p>
+
+        Cheers!
+    </div>
+    <div id="htmlContainer" class="codeContainer">
+        <div class="codeTag">html</div>
+        <textarea oninput="applyCodeOnIFrame()" id="html">&lt;!DOCTYPE HTML&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&#09;
+&lt;/head&gt;
+&lt;body&gt;
+&#09;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+    </div>
+
+    <div id="cssContainer" class="codeContainer">
+        <div class="codeTag">css</div>
+        <textarea oninput="applyCodeOnIFrame()" id="css">@charset "UTF-8";</textarea>
+    </div>
+
+    <div id="javaScriptContainer" class="codeContainer">
+        <div class="codeTag">js</div>
+        <textarea onchange="applyCodeOnIFrame()" id="javaScript"></textarea>
+    </div>
+
+    <div id="outputContainer" class="codeContainer">
+        <div class="codeTag">output</div>
+        <iframe id="output"></iframe>
+    </div>
+</body>
+</html>

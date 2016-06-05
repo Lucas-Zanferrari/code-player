@@ -1,0 +1,122 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+#header{
+	background-color: #E7E6E8;
+	height: 50px;
+	border-bottom: 1px solid gray;
+}
+#logo{
+	font-weight: bold;
+   	float: left;
+   	width: 20%;
+   	font-size: 120%;
+   	height: 100%;
+}
+#logo p{
+    position: relative;
+    padding: 5px 0 5px 0;
+    margin: 7px 130px 0 0;
+    text-align: center;
+    left: 20px;
+    border: 1px solid #E7E6E8;
+    transition: color 0.3s, background-color 0.3s, border 0.3s;
+}
+#logo p:hover{
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#menuNav{
+	width: 60%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#menuList{
+	list-style-type: none;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+#menuList li{
+    display: inline-block;
+    background-color: white;
+	padding: 10px;
+	margin: 5px -3px 5px -3px;
+	border: 1px solid gray;
+	transition: background-color 0.3s;
+}
+#menuList li:hover{
+	background-color: #E7E6E8;
+    cursor: pointer;
+}
+#menuList li.selected{
+	background-color: #7E7D7E;
+	color: white;
+}
+#buttonDiv{
+	float: right;
+	width: 20%;
+	text-align: right;
+	height: 100%;
+}
+#runButton{
+	font-size: 120%;
+	position: relative;
+	margin: 0;
+	top: 10px;
+	right: 10px;
+	background-color: #C0BEC0;
+	border-radius: 10px;
+}
+#welcomeText{
+ 	padding: 20px 170px 0 170px;
+	line-height: 35px;
+}
+#welcomeText p{
+	margin-bottom: 20px;
+	text-align: justify;
+}
+#welcomeText span{
+    font-style: italic;
+    text-decoration: underline;
+}
+.codeContainer{
+	float: left;
+	position: relative;
+    display: none;
+    border-right: 1px solid #E7E6E8;
+}
+.codeContainer textarea{
+	width: 100%;
+	height: 100%;
+	border: 0;
+    padding: 47px 20px 20px;
+    box-sizing: border-box;
+	font-size: 80%;
+	resize: none;
+    outline: none;
+}
+.codeContainer iframe{
+	width: 100%;
+    border: 0;
+	height: calc(100% - 47px);
+	margin-top: 45px;
+}
+.codeTag{
+	border: 1px solid black;
+	border-radius: 5px;
+    text-transform: uppercase;
+	padding: 0 5px 0 5px;
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
